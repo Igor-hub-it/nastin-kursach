@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+    * {
+        margin: 0;
+        font-family: 'Inter';
+        font-weight: 800;
+    }
+    header {
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        z-index: 3;
+    }
+    .wrapper {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        font-size: 25px;
+    }
+    .navbar {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .title, .main, .services, .contacts, .LK {
+        color: white;
+        text-decoration: none;
+    }
+    .title:hover, .main:hover, .services:hover, .contacts:hover, .LK:hover {
+        color: #B8B8B8;
+        cursor: pointer;
+        transition: .5s;
+    }
+    main {
+        width: 100%;
+    }
+    .main-img {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+    .top-content {
+        position: relative;
+        top: 300px;
+        width: 82%;
+        height: 500px;
+        margin: auto;
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+    }
+    .about {
+        width: 70%;
+        font-size: 42px;
+        font-weight: 800;
+        line-height: 51px;
+        color: white;
+        margin-bottom: 10px;
+    }
+    .description {
+        width: 65%;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 29px;
+        color: #B8B8B8;
+        margin-bottom: 35px;
+    }
+    .application {
+        width: 25%;
+        height: 70px;
+        border-radius: 10px;
+        background: #E58935;
+        color: white;
+        border: 0px;
+        font-size: 24px;
+    }
+    .application:hover {
+        cursor: pointer;
+        background: #ff7b00;
+        transition: 0.5s;
+    }
+    .our-services {
+        position: absolute;
+        top: 800px;
+        height: 400px;
+        width: 100%;
+        background: white;
+    }
+    .services_title {
+        margin: 40px 0 20px 0;
+        text-align: center;
+        color: #645D56;
+        font-size: 36px;
+    }
+    .services_list {
+        width: 60%;
+        margin: auto;
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .serv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        color: #645D56;
+        text-align: center;
+        text-decoration: none;
+    }
+    .serv-img {
+        height: 100px;
+        width: 120px;
+    }
+    footer {
+        width: 100%;
+        position: absolute;
+        bottom: -650px;
+        margin: 0;
+    }
+    .footer-img {
+        width: 100%;
+    }
+    .footer-content {
+        width: 60%;
+        left: 20%;
+        position: absolute;
+        top: 30px;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        font-size: 16px;
+    }
+    .footer_about__content, .footer_info__content {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+    .footer_info__content {
+        line-height: 20px;
+    }
+</style>
+<body>
+    <header>
+        <div class="wrapper">
+            <a href="/index.html" class="title">ООО "Сфера Находка"</a>
+            <div class="navbar">
+                <a href="/index.html" class="main">Главная</a>
+                <a href="/services.html" class="services">Услуги</a>
+                <a href="/contacts.html" class="contacts">Контакты</a>
+                <a href="/Lk.html" class="LK">Личный кабинет</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <img src="/imgs/Montazhmnbjhbnaya_oblast_1 1.png" alt="" class="main-img">
+        <div class="top-content">
+            <div class="about">
+                Проектирование и монтаж систем
+                видеонаблюдения, СКУД, охранных и 
+                пожарных сигнализаций в Находке
+            </div>
+            <div class="description">
+                Мы занимаемся Системами безопасности, проектируем,
+                монтируем и обслуживаем
+            </div>
+            <button class="application" type="submit">Оставить заявку</button>
+        </div>
+        <div class="our-services">
+            <div class="services_title">Наши услуги</div>
+            <div class="services_list">
+                <a href="/services.html" class="CCTV serv">
+                    <img class="serv-img" src="/imgs/3.png" alt="">
+                    <p>Системы<br>видеонаблюдения</p>
+                </a>
+                <a href="/services.html" class="intercoms serv">
+                    <img class="serv-img" src="/imgs/2.png" alt="">
+                    <p>Домофонные<br>системы</p>
+                </a>
+                <a href="/services.html" class="electromanagement serv">
+                    <img class="serv-img" src="/imgs/1.png" alt="">
+                    <p>Электромантаж</p>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="/imgs/Montazhnaya_oblnjjast_1 2.png" alt="" class="footer-img">
+        <div class="footer-content">
+            <div class="footer_about">
+                <div class="footer_about__title">О компании</div>
+                <div class="footer_about__content">
+                    ООО «Сфера Находка» - домофонная компания<br>
+                    оказывающая весь спектр<br>
+                    услуг: от проектирования и монтажа<br>
+                    до установки систем видеонаблюдения
+                </div>
+            </div>
+            <div class="footer_info">
+                <div class="footer_info__title">Информация</div>
+                <div class="footer_info__content">
+                    Россия, Приморский край, г. Находка<br>
+                    8(800) 73-48-59
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
